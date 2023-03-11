@@ -13,6 +13,9 @@ spring:
           uri: lb://catalog-service
           predicates:
             - Path=/api/v1/catalog/**
+info:
+  app:
+    name: ${spring.application.name}
 eureka:
   instance:
     hostname: localhost
