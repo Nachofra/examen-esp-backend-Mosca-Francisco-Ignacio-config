@@ -10,12 +10,9 @@ spring:
           enabled: true
       routes:
         - id: mscatalog
-          uri: lb://api-catalog
+          uri: lb://catalog-service
           predicates:
             - Path=/api/v1/catalog/**
-info:
-  app:
-    name: ${spring.application.name}
 eureka:
   instance:
     hostname: localhost
