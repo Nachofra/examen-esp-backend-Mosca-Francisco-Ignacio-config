@@ -9,7 +9,7 @@ spring:
     generate-ddl: true
   datasource:
     url: jdbc:mysql://localhost:3307/movie-dev
-    username: usr-movie
+    username: root
     password: password
     driver-class-name: com.mysql.cj.jdbc.Driver
 
