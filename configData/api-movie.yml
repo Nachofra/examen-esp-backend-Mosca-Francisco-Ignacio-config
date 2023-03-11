@@ -10,7 +10,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3307/movie-dev
     username: usr-movie
-    password: pwd-movie
+    password: password
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 eureka:
