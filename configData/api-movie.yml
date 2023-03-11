@@ -9,8 +9,8 @@ spring:
     generate-ddl: true
   datasource:
     url: jdbc:mysql://localhost:3307/movie-dev
-    username: root
-    password: password
+    username: usr-movie
+    password: pwd-movie
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 eureka:
