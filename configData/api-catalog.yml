@@ -28,41 +28,6 @@ eureka:
 # Configuro el circuit breaker dentro de catalog. Considero que es el mas utilizado debido
 # a que todas las request tienen que pasar por este, ya sean de movies o de series.
 
-#resilience4j:
-#  retry:
-#    configs:
-#      default:
-#        max-retry-attempts: 3
-#        wait-duration: 1s
-#        retry-exceptions:
-#          - java.io.IOException
-#          - java.net.SocketTimeoutException
-#      instances:
-#        retryCard:
-#          base-config: default
-#          max-retry-attempts: 5
-#          wait-duration: 2s
-#          retry-exceptions:
-#            - java.net.ConnectException
-
-# circuitbreaker:
-#  configs:
-#    default:
-#      register-health-indicator: true
-#      sliding-window-size: 10
-#      minimum-number-of-calls: 5
-#      permitted-number-of-calls-in-half-open-state: 3
-#      wait-duration-in-open-state: 30s
-#      automatic-transition-from-open-to-half-open-enabled: true
-#      failure-rate-threshold: 40
-#  instances:
-#    configCard:
-#      base-config: default
-#      sliding-window-type: COUNT_BASED
-#      sliding-window-size: 10
-#      wait-duration-in-open-state: 1m
-#      failure-rate-threshold: 40
-
 resilience4j.retry:
   instances:
     retryCatalog:
