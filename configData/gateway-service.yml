@@ -10,9 +10,17 @@ spring:
           enabled: true
       routes:
         - id: mscatalog
-          uri: lb://catalog-service
+          uri: lb://api-catalog
           predicates:
             - Path=/catalog/**
+        - id: msmovie
+          uri: lb://api-movie
+          predicates:
+            - Path=/movie/**
+        - id: msserie
+          uri: lb://api-serie
+          predicates:
+            - Path=/serie/**
 info:
   app:
     name: ${spring.application.name}
