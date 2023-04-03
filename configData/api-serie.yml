@@ -14,7 +14,9 @@ spring:
     mongodb:
       user: root
       password: root
-      uri: mongodb://localhost:27017/serie-dev
+      database: serie-dev
+      port: 27017
+      host: localhost
 eureka:
   instance:
     hostname: localhost

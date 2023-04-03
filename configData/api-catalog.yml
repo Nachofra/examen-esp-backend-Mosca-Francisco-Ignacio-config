@@ -15,7 +15,9 @@ spring:
     mongodb:
       user: root
       password: root
-      uri: mongodb://localhost:27017/catalog-dev
+      database: catalog-dev
+      port: 27017
+      host: localhost
 
 eureka:
   instance:
