@@ -13,11 +13,7 @@ spring:
     baseUrl: http://localhost:9411/
   data:
     mongodb:
-      user: root
-      password: root
-      database: catalog-dev
-      port: 27017
-      host: localhost
+      uri: mongodb://root:root@localhost:27017/catalog-dev?authSource=admin
 
 eureka:
   instance:
