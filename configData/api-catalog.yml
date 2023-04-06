@@ -26,7 +26,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 # Configuro el circuit breaker dentro de catalog. Considero que es el mas utilizado debido
-# a que todas las request tienen que pasar por este, ya sean de movies o de series.
+# a que todos los GET y parte de los mensajes asincronicos POST tienen que pasar por este, ya sean de movies o de series.
 
 resilience4j.retry:
   instances:
